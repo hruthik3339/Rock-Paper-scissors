@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,500');
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+body {
+	background: linear-gradient(135deg, #4A4063, #BFACC8, #C8C6D7, #783F8E, #4F1271);
+	color: #fff;
+	font-family: "Roboto", sans-serif;
+}
+
+code {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 12px;
+}
+
+a {
+	font-family: 'Source Code Pro', monospace;
+	color: #C8C6D7;
+}
+
+a:hover {
+	color: #BFACC8;
+}
+
+header {
+	background: #C8C6D7;
+	padding: 20px;
+}
+
+header h1 {
+	color: #4A4063;
+	text-align: center;
+	font-weight: 100;
+}
+
+.score-board {
+	border: 3px solid #fff;
+	width: 300px;
+	margin: 40px auto;
+	font-size: 40px;
+	border-radius: 4px;
+	text-align: center;
+	padding: 15px 20px;
+	position: relative;
+	background-color: rgba(74, 64, 99, 0.8);
+}
+
+.badge {
+	background: #783F8E;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 10px 6px;
+	color: #fff;
+}
+
+#user-label,
+#computer-label {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#user-label {
+	left: -5%;
+	transform: translate(-10%, -50%);
+}
+
+#computer-label {
+	right: -5%;
+	transform: translate(10%, -50%);
+}
+
+.result {
+	font-weight: 300;
+	text-align: center;
+	font-size: 32px;
+	line-height: 50px;
+	color: #1b131f;
+}
+
+.choices {
+	margin: 0 auto;
+	text-align: center;
+	padding: 40px 0;
+}
+
+.choice {
+	display: inline-block;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	padding: 10px;
+	margin: auto 10px;
+	transition: all 0.3s ease-in-out;
+	background-color: #4F1271;
+}
+
+.choice img {
+	filter: invert(100%);
+}
+
+#action-message {
+	text-align: center;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 40px 0;
+	color: #C8C6D7;
+}
+
+.winningStyles {
+	border: 3px solid #4dcc7d;
+	background-color: #043507;
+	box-shadow: 0 0 20px #043507;
+}
+
+.losingStyles {
+	border: 3px solid #c52e2e;
+	background-color: #2e0303;
+	box-shadow: 0 0 20px #2e0303;
+}
+
+.drawStyles {
+	border: 3px solid #444;
+	background-color: #222;
+	box-shadow: 0 0 20px #222;
+}
+
+sup {
+	margin: 0;
+	padding: 0;
+}
